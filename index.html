@@ -641,8 +641,32 @@
       padding: 20px 0;
     }
   
+    .footer-content {
+      display: flex;
+      justify-content: center; /* Align items horizontally */
+      align-items: flex-end; /* Align items to the bottom vertically */
+      height: 100%; /* Set the height of the container to 100% */
+    }
+  
+    .footer-content a {
+      display: flex; /* Display images as flex items */
+      margin: 0 30px; /* Adjust the spacing between images */
+      height: 100%; /* Ensure anchor tags take full height of the line */
+      align-items: flex-end; /* Align items to the bottom vertically */
+    }
+  
     .footer-content img {
-      display: inline-block;
+      display: block; /* Display images as block elements */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* Maintain aspect ratio and fit within the container */
+      margin: auto; /* Center align the images horizontally */
+    }
+  
+    html, body {
+      height: 100%; /* Set the height of the HTML and body elements to 100% */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
     }
   </style>
   
@@ -650,12 +674,19 @@
     <div class="footer-content">
       <!-- Certification Badge Code -->
       <a href="https://www.certificationprovider.com/certificate-link" target="_blank">
-        <img src="assets/img/portfolio/google-1.png" alt="Certification Badge">
+        <img src="assets/img/portfolio/google-7.png" alt="Certification Badge">
+      </a>
+  
+      <!-- Certification Badge Code -->
+      <a href="https://www.certificationprovider.com/certificate-link" target="_blank">
+        <img src="assets/img/portfolio/google-3.png" alt="Certification Badge">
       </a>
     </div>
   </footer>
-    
+  
+  
 
+  
   
 </body>
 
